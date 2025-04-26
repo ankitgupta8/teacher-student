@@ -26,9 +26,6 @@ workflows:
       - name: Validate Expo project setup
         script: |
           npx expo-doctor || true
-      - name: Run Expo Prebuild
-        script: |
-          npx expo prebuild
       - name: Build Android release
         script: |
           cd android
